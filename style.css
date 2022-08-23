@@ -55,14 +55,15 @@ a {
 }
 
 .card {
-    position:absolute;
+    /* position:absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
-    padding: 1.5rem;
+    transform: translate(-50%, -50%); */
+    padding: 1.5rem; 
+    margin: auto;
 
-    width: clamp(400px, 50%, 600px);
+    width: clamp(360px, 50%, 600px);
 
     color: var(--text-color);
     background: var(--card-color);
@@ -99,6 +100,26 @@ a {
     padding:auto;
 }
 
+
+.contact {
+    grid-column: 2;
+    display:grid;
+
+}
+
+.socials {
+    text-align: center;
+    margin:auto;
+    padding:auto;
+    object-fit: cover;
+}
+
+.email {
+    text-align: center;
+    margin:auto;
+    padding:auto;
+}
+
 .description {
     grid-column: 2;
     font-size: 1rem;
@@ -123,6 +144,13 @@ a {
 .gallery img {
     width: 100%;
     object-fit: cover;
+    opacity: 90%;
+}
+
+.gallery video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
     opacity: 90%;
 }
 
